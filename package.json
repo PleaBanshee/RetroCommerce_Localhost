@@ -1,0 +1,39 @@
+{
+  "name": "retrocommerce",
+  "version": "1.0.0",
+  "description": "full ecommerce app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon backend/server.js",
+    "prod": "set NODE_ENV=PRODUCTION& node backend/server.js",
+    "seeder": "node backend/utils/seeder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PleaBanshee/RetroCommerce.git"
+  },
+  "author": "Llewellyn Anthony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PleaBanshee/RetroCommerce/issues"
+  },
+  "homepage": "https://github.com/PleaBanshee/RetroCommerce#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.34.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "nodemailer": "^6.9.0",
+    "stripe": "^11.16.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
