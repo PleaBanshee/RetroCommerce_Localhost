@@ -72,7 +72,7 @@ const Home = () => {
       ) : (
         <Fragment>
           <MetaData title={"Online Products"} />
-          <h1 id="products_heading" className="text-center">
+          <h1 id="products_heading" className="text-center retro-green-text">
             Latest Products
           </h1>
           <section id="products" className="container mt-5">

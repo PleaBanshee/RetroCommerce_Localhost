@@ -7,7 +7,47 @@ body {
   padding: 0px;
   overflow-x: hidden;
   /* background-image: linear-gradient(to right, white, #ffcc99); */
-  background-color: #e9e8e7;
+  background-color: #363636;
+}
+
+/* RetroCommerce custom styling */
+.retro-green {
+  background-color: #abff4f !important;
+}
+
+.retro-black {
+  background-color: #202020 !important;
+}
+
+.retro-yellow {
+  background-color: #fdb32b !important;
+}
+
+.retro-black-text {
+  color: #202020 !important;
+}
+
+.retro-green-text {
+  color: #abff4f;
+}
+
+.retro-yellow-text {
+  color: #fdb32b;
+}
+
+.product-card-color {
+  background-color: #4e4e4e;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  border: 2px solid #abff4f;
+  /* border-color: #abff4f; */
+}
+
+.card-border-color {
+  border-color: #abff4f;
 }
 
 /* Scroll Bar */
@@ -110,7 +150,8 @@ nav {
 
 .ratings {
   font-size: 1.2rem;
-  color: #fdcc0d;
+  /* color: #fdcc0d; */
+  color: #d9fe93 !important;
 }
 
 #no_of_reviews {
@@ -133,7 +174,8 @@ footer {
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
-  color: #fdcc0d;
+  /* color: #fdcc0d; */
+  color: #abff4f;
 }
 
 .rating-outer::before {
@@ -151,7 +193,8 @@ footer {
 
 .rating-inner::before {
   content: '\f005 \f005 \f005 \f005 \f005';
-  color: #f8ce0b;
+  /* color: #f8ce0b; */
+  color: #68DE14FF;
 }
 
 /* Product Details Page */
@@ -473,17 +516,40 @@ footer {
 }
 
 /* Pagination */
+.pagination {
+  background-color: #202020;
+  color: #abff4f;
+}
+
+.pagination>li>a {
+  background-color: #202020;
+  color: #abff4f;
+}
+
+.pagination>li>a:hover {
+  background-color: #363636;
+  color: #abff4f;
+}
+
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+  background-color: #202020;
+  color: #abff4f;
+}
+
 .page-item.active .page-link {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  /* background-color: #fa9c23; */
+  background-color: #abff4f;
+  border-color: #abff4f;
 }
 
 .page-link {
-  color: #fa9c23;
+  color: #202020;
 }
 
 .page-link:hover {
-  color: #fa9c23;
+  color: #abff4f;
 }
 
 /* Admin Sidebar */
