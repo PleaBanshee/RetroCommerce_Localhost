@@ -20,11 +20,11 @@ const Header = () => {
 
   return (
     <Fragment>
-      <nav className="navbar row">
+      <nav className="navbar row retro-black">
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <Link to="/">
-              <img src="/images/logo.png" alt="Logo.png" />
+              <img src="/images/RetroLogo.png" alt="Logo.png" />
             </Link>
           </div>
         </div>
@@ -38,7 +38,11 @@ const Header = () => {
             <span id="cart" className="ml-3">
               Cart
             </span>
-            <span className="ml-1" id="cart_count">
+            <span
+              className="ml-1"
+              id="cart_count"
+              style={{ backgroundColor: "#abff4f" }}
+            >
               {cartItems.length}
             </span>
           </Link>
@@ -60,7 +64,7 @@ const Header = () => {
                     className="rounded-circle"
                   />
                 </figure>
-                <span>{user && user.name}</span>
+                <span className="retro-green-text">{user && user.name}</span>
               </Link>
               <div
                 className="dropdown-menu"
@@ -91,7 +95,12 @@ const Header = () => {
             </div>
           ) : (
             !loading && (
-              <Link to="/login" className="btn ml-4" id="login_btn">
+              <Link
+                to="/login"
+                className="btn ml-4 font-weight-bold"
+                id="login_btn"
+                style={{ backgroundColor: "#abff4f" }}
+              >
                 Login
               </Link>
             )

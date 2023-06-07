@@ -26,8 +26,12 @@ const Search = () => {
             onChange={(e) => setKeyword(e.target.value)}
           />
           <div className="input-group-append">
-            <button id="search_btn" className="btn">
-              <i className="fa fa-search" aria-hidden="true"></i>
+            <button
+              id="search_btn"
+              className="btn retro-green"
+              style={{ backgroundColor: "#abff4f" }}
+            >
+              <i className="fa fa-search retro-green" aria-hidden="true"></i>
             </button>
           </div>
         </div>

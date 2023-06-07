@@ -5,9 +5,11 @@ const Product = ({ product, col }) => {
   return (
     <div className={`col-sm-12 col-md-6 col-lg-${col} my-3`}>
       <div
-        className="card p-3 border shadow-lg"
+        className="card p-3"
         style={{
-          borderRadius: "10px"
+          borderRadius: "10px",
+          backgroundColor: "#4e4e4e",
+          background: "linear-gradient(rgba(78, 78, 78, 1),rgba(78, 78, 78, 0)",
         }}
       >
         <img
@@ -17,7 +19,9 @@ const Product = ({ product, col }) => {
         />
         <div className="card-body d-flex flex-column">
           <h5 className="card-title text-center">
-            <Link to={`/product/${product._id}`}>{product.name}</Link>
+            <Link className="text-white" to={`/product/${product._id}`}>
+              {product.name}
+            </Link>
           </h5>
           <div className="ratings mt-auto text-center">
             <div className="rating-outer">
@@ -25,16 +29,21 @@ const Product = ({ product, col }) => {
                 className="rating-inner"
                 style={{
                   width: `${(product.ratings / 5) * 100}%`,
+                  color: "#abff4f !important",
                 }}
               ></div>
             </div>
-            <span id="no_of_reviews">{product.numOfReviews} Reviews</span>
+            <span id="no_of_reviews" style={{ color: "#ADA6B3FF" }}>
+              {product.numOfReviews} Reviews
+            </span>
           </div>
-          <p className="card-text text-center">${product.price}</p>
+          <p className="card-text text-center font-weight-bold text-white">
+            ${product.price}
+          </p>
           <Link
             to={`/product/${product._id}`}
             id="view_btn"
-            className="btn btn-block"
+            className="btn btn-block retro-green retro-black-text"
           >
             View Details
           </Link>
