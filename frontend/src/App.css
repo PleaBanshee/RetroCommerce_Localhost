@@ -248,6 +248,7 @@ footer {
   width: 80px;
   height: 80px;
   padding-left: 0;
+  color: #abff4f;
 }
 .loader:after {
   content: ' ';
@@ -256,8 +257,8 @@ footer {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fa9c23;
-  border-color: #fa9c23 transparent;
+  border: 6px solid #abff4f;
+  border-color: #abff4f transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -531,21 +532,22 @@ footer {
   color: #abff4f;
 }
 
-.pagination>.disabled>a,
-.pagination>.disabled>a:hover,
-.pagination>.disabled>a:focus {
-  background-color: #202020;
-  color: #abff4f;
-}
-
 .page-item.active .page-link {
   /* background-color: #fa9c23; */
   background-color: #abff4f;
   border-color: #abff4f;
+  color: #202020;
+  font-weight: 700;
 }
 
 .page-link {
   color: #202020;
+}
+
+.page-item.disabled .page-link {
+  z-index: 3;
+  background-color: #363636;
+  color: #abff4f;
 }
 
 .page-link:hover {
